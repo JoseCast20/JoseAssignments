@@ -9,6 +9,90 @@
   <hr align="left" width="100%">
 </head>
 <body>
+  <style>
+  #Education {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  #customers td, #Education th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  #Education tr:nth-child(even){background-color: #f2f2f2;}
+
+  #Education tr:hover {background-color: #ddd;}
+
+  #Education th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;}
+ {
+  	font-family: Arial, sans;
+  	margin: 0;
+  	padding: 0;
+  	box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  }
+  h1, h2 {
+  	margin: 1em 0 0 0;
+  	text-align: center;
+  }
+  h2 {
+  	margin: 0 0 1em 0;
+  }
+  #container {
+      margin: 0 auto;
+      width: 50%;
+  }
+  #JoseCastro input {
+  	display: none;
+  }
+  #JoseCastro label {
+  	background: #eee;
+  	border-radius: .25em;
+  	cursor: pointer;
+  	display: block;
+  	margin-bottom: .125em;
+  	padding: .25em 1em;
+  	z-index: 20;
+  }
+  #JoseCastro label:hover {
+  	background: #ccc;
+  }
+
+  #JoseCastro input:checked + label {
+  	background: #ccc;
+  	border-bottom-right-radius: 0;
+  	border-bottom-left-radius: 0;
+  	color: white;
+  	margin-bottom: 0;
+  }
+  #JoseCastro article {
+  	background: #f7f7f7;
+  	height:0px;
+  	overflow:hidden;
+  	z-index:10;
+  }
+  #JoseCastro article p {
+  	padding: 1em;
+  }
+  #JoseCastro input:checked article {
+  }
+  #JoseCastro input:checked ~ article {
+  	border-bottom-left-radius: .25em;
+  	border-bottom-right-radius: .25em;
+  	height: auto;
+  	margin-bottom: .125em;
+  }
+  </style>
+
+  <div id="container">
+  <selction id="JoseCastro">
   <table id="Education">
     <tr>
     <th>School</th>
@@ -39,22 +123,32 @@
     <td>Dessert Shadows Middle School</td>
     <td>Sixth Grade - Eigth Grade 3 years</td>
     <td>United States</td>
+  </tr>
     <tr>
-    </tr>
       <td>Nogales High School</td>
       <td>Ninth Grade - Twelvth Grade 4 years</td>
       <td>United States</td>
+    </tr>
       <tr>
-      </tr>
         <td>Arizona State University</td>
         <td>Current</td>
         <td>United States</td>
       </tr>
 </table>
+      <div>
+      <input type="checkbox" id="check-1" />
+      <label for="check-1">Education</label>
+      <article>
 <p><b><u><h3>EDUCATION</h3></b></u></p>
 <p>Bachelor of Science in Digital Culture (Media Processing)<b><object align="Right">GPA: 3.49</object></Right></P></b></a>
 <p>Herberger Institute for Design and the Arts, Arizona State University, Tempe, AZ <b><object align="Right">Spring  2023</object></Right></b> </P>
   <hr align="left" width="100%">
+</article>
+  </div>
+  <div>
+  <input type="checkbox" id="check-2" />
+				<label for="check-2">Experience</label>
+				<article>
 <p><b><u><h3>Professional Experience</h3></u> <object align="Right">August 2017 - May 2019</object></b></p>
 <p><b>Child Care Provider</b></p>
 <p>Exprienced handling and taking care of kids</p>
@@ -63,13 +157,21 @@
 <p>Developed teamwork skills getting the job done efficiently and accordingly</p>
 <p>Experienced in measuring, cutting, lifting heavy objects, and working with cement</p>
 <hr align="left" width="100%">
+</article>
+    </div>
+    <div>
+				<input type="checkbox" id="check-3" />
+				<label for="check-3">Reference</label>
+				<article>
 <p><b><u><h3>Reference</p></b></u></h3>
 <p>Stacy Morgan (520)604-7854</p>
 <p>Bob John (520)604-5487</p>
 <p>Megan Stacy (520)604-3256</p>
 <p>Gill Berto (520)604-1596</p>
 <p>Garret Salveston (520)604-1245</p>
-
-
+</article>
+			</div>
+		</section>
+  </div>
 </body>
 </html>
