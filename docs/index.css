@@ -1,0 +1,79 @@
+#Education {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #Education th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#Education tr:nth-child(even){background-color: #f2f2f2;}
+
+#Education tr:hover {background-color: #ddd;}
+
+#Education th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;}
+{
+  font-family: Arial, sans;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+h1, h2 {
+  margin: 1em 0 0 0;
+  text-align: center;
+}
+h2 {
+  margin: 0 0 1em 0;
+}
+#container {
+    margin: 0 auto;
+    width: 50%;
+}
+#JoseCastro input {
+  display: none;
+}
+#JoseCastro label {
+  background: #eee;
+  border-radius: .25em;
+  cursor: pointer;
+  display: block;
+  margin-bottom: .125em;
+  padding: .25em 1em;
+  z-index: 20;
+}
+#JoseCastro label:hover {
+  background: #ccc;
+}
+
+#JoseCastro input:checked + label {
+  background: #ccc;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  color: white;
+  margin-bottom: 0;
+}
+#JoseCastro article {
+  background: #f7f7f7;
+  height:0px;
+  overflow:hidden;
+  z-index:10;
+}
+#JoseCastro article p {
+  padding: 1em;
+}
+#JoseCastro input:checked article {
+}
+#JoseCastro input:checked ~ article {
+  border-bottom-left-radius: .25em;
+  border-bottom-right-radius: .25em;
+  height: auto;
+  margin-bottom: .125em;
+}
